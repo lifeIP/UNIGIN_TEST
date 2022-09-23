@@ -1,0 +1,4 @@
+﻿  task.cpp
+C:\Users\molok\Desktop\UNIGIN\LOGIC\public\source\task.cpp(198,20): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Users\molok\Desktop\UNIGIN\LOGIC\public\source\task.cpp(205,20): warning C4018: <: несоответствие типов со знаком и без знака
+  Project1.vcxproj -> C:\Users\molok\Desktop\UNIGIN\LOGIC\Project1\Debug\Project1.exe
