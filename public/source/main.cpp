@@ -6,7 +6,7 @@
 
 #include <iostream>
 #include <fstream>
-
+#include <chrono>
 #include "task.h"
 
 int main()
@@ -30,10 +30,15 @@ int main()
 		}
 		in.close();
 	}
-
+	
+	
 	// invoke
+	std::cout << "Time start" << std::endl;
+	auto time_start = std::chrono::steady_clock::now();
 	Task::checkIntersections(triangles, intersections);
-
+	auto time_end = std::chrono::steady_clock::now();
+	auto elapsed_ms = std::chrono::duration_cast<std::chrono::nanoseconds>(time_end - time_start);
+	std::cout << "The time: " << elapsed_ms.count() << " ns\n";
 	if (intersections.empty())
 	{
 		return -1;
